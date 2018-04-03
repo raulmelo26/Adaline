@@ -1,15 +1,13 @@
 fprintf('+------------------------------------------------------------------------+\n');
-fprintf('|                           REDES NEURAIS ARTIFICIAIS                    |\n');
 fprintf('|                              PERCEPTRON SIMPLES                        |\n');
-fprintf('|                         (Prof. Ajalmar Rego da Rocha Neto)             |\n');
-fprintf('|                     Acadêmico: Raul Gabriel Carvalho de Melo           |\n');
-fprintf('|                                IFCE - Maracanaú                        |\n');
+fprintf('|                     AcadÃªmico: Raul Gabriel Carvalho de Melo           |\n');
+fprintf('|                                IFCE - MaracanaÃº                        |\n');
 fprintf('+------------------------------------------------------------------------+\n');
 
 clc;
 close all;
 
-% Variáveis iniciais
+% VariÃ¡veis iniciais
 Dif = 10; 
 vetorErros = []; 
 Epoca = 1;
@@ -57,9 +55,9 @@ d = std(vetorErros);
 
 
 fprintf('RMSE: %.3f\n',RMSE);
-fprintf('Desvio padrão: %.3f\n',d);
+fprintf('Desvio padrÃ£o: %.3f\n',d);
 
-fprintf('Número de épocas: ');
+fprintf('NÃºmero de Ã©pocas: ');
 disp(Epoca);
 fprintf('Erro atingido: ');
 disp(Dif);
@@ -67,7 +65,7 @@ disp(Dif);
 % Formula do livro
 retaW = W(1)*X + W(2);
 plot(X, retaW,'blue');
-title('Regressão');
+title('RegressÃ£o');
 legend('Reta real','Erros','Reta Obtida');
 
 
